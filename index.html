@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Магазин строительного оборудования «Девайс»</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Магазин строительного оборудования «Девайс»</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+  <header class="page-header">
+    <a class="page-logo" href="#">
+      <img src="img/logo_black.png" alt="Логотип сайта «Девайс»" width="164" height="36">
+		</a>
+		<section class="user-block">
+			<h1 class="visually-hidden">Поиск и блок пользователя</h1>
+			<form action="#" class="user-block__form" method="get">
+				<input class="user-block__search-field" name="search" type="text" placeholder="Поиск по сайту">
+				<button class="user-block__search-button" type="submit">Найти</button>
+			</form>
+			<ul class="user-block__list">
+				<li><a href="#" class="user-block__item user-block__item--enter">Войти</a></li>
+			</ul>
+			<ul class="user-block__list">	
+				<li><a href="#" class="user-block__item user-block__item--compare">Сравнить</a></li>
+				<li><a href="#" class="user-block__item user-block__item--basket">Корзина</a></li>
+			</ul>
+		</section>
+		<nav class="main-nav">
+			<ul class="catalog-list">
+				<li>
+					<a href="#" class="catalog-list__link">Каталог товаров</a>
+					<ul class="catalog-list__items">
+						<li><a href="#" class="catalog-list__item">Виртуальная реальность</a></li>
+						<li><a href="#" class="catalog-list__item">Фитнесс-браслеты</a></li>
+						<li><a href="#" class="catalog-list__item">Квадрокоптеры</a></li>
+						<li><a href="#" class="catalog-list__item ">Моноподы для селфи</a></li>
+						<li><a href="#" class="catalog-list__item ">Умные часы</a></li>
+						<li><a href="#" class="catalog-list__item ">Экшн-камеры</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="info-list">
+				<li><a href="#" class="info-list__item">Доставка</a></li>
+				<li><a href="#" class="info-list__item">Гарантия</a></li>
+				<li><a href="#" class="info-list__item">Контакты</a></li>
+			</ul>
+		</nav>
+  </header>
 </body>
 </html>
