@@ -47,6 +47,115 @@
 				<li><a href="#" class="info-list__item">Контакты</a></li>
 			</ul>
 		</nav>
-  </header>
+	</header>
+	<main class="main-content">
+		<section class="slider">
+			<h1 class="visually-hidden">Слайдер</h1>
+			<div class="slider-controls">
+				<span class="slider__control" onclick="currentSlide(1)"></span>
+				<span class="slider__control" onclick="currentSlide(2)"></span>
+				<span class="slider__control" onclick="currentSlide(3)"></span>
+			</div>
+			<div class="slide slide-1">
+					<img src="img/slider-1.png" alt="Селфи-палки" class="slider__image" width="384" height="486">
+					<div class="slider__content">
+						<span class="slider__number">01</span>
+						<h1 class="slider__title">Делай селфи, как Бен Стиллер!</h1>
+						<p class="slider__descr">Самая длинная палка для селфи доступна в нашем магазине.
+							Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+						<a href="#" class="slider__btn btn">Подробнее</a>	
+						<table class="slider__info">
+							<tr>
+								<th class="slider__heading">8,5 м</th>
+								<th class="slider__heading">5 кг</th>
+								<th class="slider__heading">Карбон</th>
+							</tr>
+							<tr>
+								<td>Длина палки</td>
+								<td>Вес палки</td>
+								<td>Материал</td>
+							</tr>
+						</table>
+					</div>	
+			</div>
+			<div class="slide slide-2">
+						<img src="img/slider-2.png" alt="Умные часы" class="slider__image" width="345" height="485">
+						<div class="slider__content">
+							<span class="slider__number">02</span>
+							<h1 class="slider__title">Худеем правильно!</h1>
+							<p class="slider__descr">Мотивирующие фитнесc-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<a href="#" class="slider__btn btn">Подробнее</a>	
+							<table class="slider__info">
+								<tr>
+									<th class="slider__heading">48 часов</th>
+								</tr>
+								<tr>
+									<td>Без подзарядки</td>
+								</tr>
+							</table>
+						</div>
+			</div>
+			<div class="slide slide-3">
+							<img src="img/slider-3.png" alt="Квадрокоптер" class="slider__image slider__image--three" width="526" height="334">
+							<div class="slider__content slider__content--margin">
+								<span class="slider__number">03</span>
+								<h1 class="slider__title slider__title--three">Порхает как бабочка, жалит как пчела!</h1>
+								<p class="slider__descr">Этот обычный, на первый взгляд, квадрокоптер оснащен
+										мощным лазером, замаскированным под стандартную камеру.</p>
+								<a href="#" class="slider__btn btn">Подробнее</a>	
+								<table class="slider__info">
+									<tr>
+										<th class="slider__heading">800 м</th>
+										<th class="slider__heading">50 м</th>
+									</tr>
+									<tr>
+										<td>Дальность полета</td>
+										<td>Радиус поражения</td>
+									</tr>
+								</table>
+							</div>
+			</div>
+		</section>
+		<section class="product">
+			<h1 class="visually-hidden">Каталог товаров</h1>
+			<div class="product__item">
+				<a href="#" class="product__image">
+					<img src="img/shop-1.png" alt="Виртуальная реальность" width="97" height="55">
+				</a>
+				<h2 class="product__title">Виртуальная реальность</h2>
+			</div>
+			<div class="product__item">
+					<a href="#" class="product__image product__image--monopods">
+						<img src="img/shop-2.png" alt="Моноподы для селфи" width="86" height="117">
+					</a>
+					<h2 class="product__title">Моноподы для селфи</h2>
+			</div>
+			<div class="product__item">
+					<a href="#" class="product__image product__image--camera">
+						<img src="img/shop-3.png" alt="Экшн-камеры" width="71" height="87">
+					</a>
+					<h2 class="product__title">Экшн-камеры</h2>
+			</div>
+			<div class="product__item">
+					<a href="#" class="product__image product__image--fitness">
+						<img src="img/shop-4.png" alt="Фитнесс браслеты" width="107" height="65">
+					</a>
+					<h2 class="product__title">Фитнесс браслеты</h2>
+			</div>
+			<div class="product__item">
+					<a href="#" class="product__image product__image--watch">
+						<img src="img/shop-5.png" alt="Умные часы" width="56" height="98">
+					</a>
+					<h2 class="product__title">Умные часы</h2>
+			</div>
+			<div class="product__item">
+					<a href="#" class="product__image product__image--kvadro">
+						<img src="img/shop-6.png" alt="Квадрокоптеры" width="132" height="69">
+					</a>
+					<h2 class="product__title">Квадрокоптеры</h2>
+			</div>
+		</section>
+	</main>
+	<script src="js/scripts.js"></script>
 </body>
 </html>
