@@ -47,14 +47,14 @@
 				<li><a href="#" class="info-list__item">Контакты</a></li>
 			</ul>
 		</nav>
-	</header>
+  </header>
 	<main class="main-content">
 		<section class="slider">
 			<h1 class="visually-hidden">Слайдер</h1>
 			<div class="slider-controls">
-				<span class="slider__control" onclick="currentSlide(1)"></span>
-				<span class="slider__control" onclick="currentSlide(2)"></span>
-				<span class="slider__control" onclick="currentSlide(3)"></span>
+				<span class="slider__control" onclick="showSlides(0)"></span>
+				<span class="slider__control" onclick="showSlides(1)"></span>
+				<span class="slider__control" onclick="showSlides(2)"></span>
 			</div>
 			<div class="slide slide-1">
 					<img src="img/slider-1.png" alt="Селфи-палки" class="slider__image" width="384" height="486">
@@ -154,6 +154,43 @@
 					</a>
 					<h2 class="product__title">Квадрокоптеры</h2>
 			</div>
+		</section>
+		<section class="advantages">
+			<h1 class="visually-hidden">Преимущества</h1>
+			<ul class="advantages__list">
+				<li class="advantages__item btn" onclick="showAdvantages(0)">Доставка</li>
+				<li class="advantages__item btn" onclick="showAdvantages(1)">Гарантия</li>
+				<li class="advantages__item btn" onclick="showAdvantages(2)">Кредит</li>
+			</ul>
+			<div class="advantages__wrapper">
+				<section class="advantages__info">
+					<h3 class="advantages__title">Доставка</h3>
+					<p class="advantages__descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+				</section>
+				<section class="advantages__info">
+					<h3 class="advantages__title">Гарантия</h3>
+					<p class="advantages__descr">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+				</section>
+				<section class="advantages__info">
+					<h3 class="advantages__title">Кредит</h3>
+					<p class="advantages__descr">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+				</section>
+			</div>
+		</section>
+		<section class="partners">
+			<h1 class="visually-hidden">Наши партнеры</h1>
+			<a href="#" class="partners__link">
+				<img src="img/logo-1.jpg" alt="ДеДжеАй" width="260" height="100"> 
+			</a>
+			<a href="#" class="partners__link">
+				<img src="img/logo-2.jpg" alt="ЭсПеГаджетс" width="260" height="100">
+			</a>
+			<a href="#" class="partners__link">
+				<img src="img/logo-3.jpg" alt="ГоуПро" width="260" height="100">
+			</a>
+			<a href="#" class="partners__link">
+				<img src="img/logo-4.jpg" alt="Вайв" width="260" height="100">
+			</a>
 		</section>
 	</main>
 	<script src="js/scripts.js"></script>
