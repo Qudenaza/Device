@@ -364,7 +364,6 @@ body {
 	width: 1040px;
 	margin: 0 auto;
 	padding: 0 60px 0 60px;
-	outline: 1px solid red;
 }
 
 /* SLIDER */
@@ -710,4 +709,272 @@ body {
 .partners__link:hover {
 	opacity: 1;
 	transition: .5s;
+}
+
+/* INFO */
+
+.info {
+	display: flex;
+	margin: 50px -60px 0 -60px;
+	font-family: 'Gilroy', 'Tahoma', serif;
+}
+
+/* ABOUT US */
+
+
+.about-us__title {
+	position: relative;
+	margin-top: 85px;
+	font-size: 47px;
+}
+
+.about-us__title::before {
+	content: '';
+	position: absolute;
+	top: -45px;
+	width: 16%;
+	height: 7px;
+	background: #000;
+}
+
+.about-us__descr {
+	width: 495px;
+	margin-bottom: 30px;
+	font-family: 'Open Sans', 'Arial', serif;
+	color: #464646;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+
+.about-us__list {
+	margin: 67px 0 58px 35px;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: bold;
+	list-style: none;
+	padding: 0;
+}
+
+.about-us__item {
+	position: relative;
+}
+
+.about-us__item::before {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	background: #000000;
+	top: 50%;
+	left: -15px;
+}
+
+.about-us__btn {
+	padding-left: 22px;
+	padding-right: 22px;
+}
+
+/* CONTACTS */
+
+.contacts__title {
+	position: relative;
+	margin-top: 85px;
+	margin-left: 102px;
+	font-size: 47px;
+}
+
+.contacts__title::before {
+	content: '';
+	position: absolute;
+	top: -45px;
+	width: 15%;
+	height: 7px;
+	background: #000;
+}
+
+.contacts__descr {
+	margin-left: 102px;
+	margin-bottom: 40px;
+	font-family: 'Open Sans', 'Arial', serif;
+	color: #464646;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.map {
+	margin-left: 102px;
+	height: 220px;
+	background: url('../img/map.jpg') no-repeat;
+}
+
+.contacts__btn {
+	margin-top: 75px;
+	margin-left: 102px;
+}
+
+/* FOOTER */
+
+.page-footer {
+	margin-top: 86px;
+	background: #464646;
+}
+
+.footer-wrapper {
+	display: flex;
+	width: 1160px;
+	background: #464646;
+	margin: 0 auto;
+}
+
+.adress {
+	width: 230px;
+	position: relative;
+	padding-top: 64px;
+	padding-bottom: 200px;
+}
+
+.adress::after {
+	content: '';
+	position: absolute;
+	bottom: 110px;
+	height: 7px;
+	width: 80px;
+	background: #f0c52e;
+}
+
+.page-logo {
+	display: block;
+}
+
+.adress__location {
+	display: block;
+	margin-top: 30px;
+	font-family: 'Open Sans', 'Arial', serif;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.info-list--footer {
+	margin-top: 138px;
+	margin-left: 158px;
+}
+
+.info-list--footer li:nth-child(2) {
+	margin-right: 30px;
+}
+
+.info-list--footer .info-list__item {
+	color: #fff;
+}
+
+.social {
+	margin-top: 60px;
+	padding-left: 295px;
+}
+
+.social__btn {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	opacity: 0.3;
+}
+
+.social__btn:hover {
+	opacity: 1;
+}
+
+.social__btn:active {
+	opacity: 0.3;
+}
+
+.insta {
+	background: url('../img/insta.svg') no-repeat;
+}
+
+.tw {
+	background: url('../img/tw.svg') no-repeat;
+}
+
+.fb {
+	background: url('../img/fb.svg') no-repeat;
+}
+
+.footer__right {
+	width: 400px;
+
+}
+
+.footer-nav-list {
+
+	margin-top: 62px;
+	list-style: none;
+}
+
+.footer-nav-list li {
+	display: inline-block;
+	margin-right: 27px;
+	vertical-align: top;
+}
+
+.footer-nav-list li:last-child {
+	margin-right: 0;
+}
+
+.footer-nav-item {
+	padding-left: 30px;
+	font-family: 'Open Sans', 'Arial', serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-nav-item:hover {
+	opacity: .6;
+}
+
+.footer-nav-item:active {
+	opacity: .3;
+}
+
+.footer-nav-item--user {
+	background: url("../img/user-footer.png") no-repeat 5px 50%;
+}
+
+.footer-nav-item--compare {
+	background: url("../img/compare-footer.png") no-repeat 12px 60%;
+}
+
+.footer-nav-item--basket {
+	background: url("../img/basket-footer.png") no-repeat 10px 50%;
+}
+
+.footer__phone {
+	display: block;
+	margin-top: 42px;
+	font-family: 'Open Sans', 'Arial', serif;
+	font-weight: normal;
+	color: #ffffff;
+	text-align: right;
+	font-size: 15px;
+}
+
+.academy__logo {
+	display: inline-block;
+	margin-top: 70px;
+	margin-left: 342px;
+	opacity: .3;
+}
+
+.academy__logo:hover {
+	opacity: 1;
+}
+
+.academy__logo:active {
+	opacity: .6;
 }
