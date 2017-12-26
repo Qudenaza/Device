@@ -207,7 +207,10 @@
 			<section class="contacts">
 				<h2 class="contacts__title">Контакты</h2>
 				<p class="contacts__descr">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-				<div class="map"></div>
+				<div class="map">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5dd66eda2d18772f3d731316d93af150efe64c8e95b7338e037756f71a9425a9&amp;source=constructor" width="560" height="222" frameborder="0">
+					</iframe>
+				</div>
 				<a href="#" class="contacts__btn btn">Напишите нам</a>	
 			</section>
 		</div>
@@ -245,6 +248,21 @@
 			</div>
 		</div>	
 	</footer>
+	<div class="modal">
+		<button type="button" class="modal__close">X</button>
+		<form action="#" class="modal__form" method="post">
+			<label class="modal__name">Ваш имя:
+				<input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+			</label>
+			<label class="modal__email">Ваш e-mail:
+				<input type="text" name="email" placeholder="Для отправки ответа">
+			</label>
+			<label class="modal__text">Текст письма:
+				<textarea name="text">В свободной форме</textarea>	
+			</label>
+			<a href="#" class="modal__btn btn">Отправить</a>
+		</form>
+	</div>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
