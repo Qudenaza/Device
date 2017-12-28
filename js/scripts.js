@@ -59,15 +59,6 @@ function showModal() {
 };
 
 showModal();
-// var modalOpen = document.querySelector(".contacts__btn"),
-//     modalClose = document.querySelector(".modal__close"),
-//     modal = document.querySelector(".modal");
 
-// modalOpen.addEventListener("click", function(evt) {
-//     evt.preventDefault();
-//     modal.style.display = "block";
-// })
 
-// modalClose.addEventListener("click", function() {
-//     modal.style.display = "none";
-// })
+

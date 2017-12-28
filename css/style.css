@@ -66,6 +66,14 @@ body {
 	background: inherit;
 }
 
+.page-header--catalog {
+	padding-bottom: 50px;
+}
+
+.page-header--catalog::after {
+	display: none;
+}
+
 .page-header::before {
 	content: '';
 	position: absolute;
@@ -319,7 +327,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;	
 	position: absolute;
-	width: 1050px;
+	width: 1160px;
+	left: -60px;
 	margin: 0;
 	padding: 20px 0 25px 0;
 	background: #f7e296;
@@ -330,7 +339,7 @@ body {
 .catalog-list__item {
 	display: inline-block;
 	padding: 10px 0 10px 0;
-	margin-left: 50px;
+	margin-left: 62px;
 	font-size: 15px;
 	text-decoration: none;
 	color: #464646;
@@ -347,7 +356,7 @@ body {
 .catalog-list__items li:first-child a,
 .catalog-list__items li:nth-child(4) a,
 .catalog-list__items li:last-child a {
-	margin-left: 0;
+	/* margin-left: 0; */
 }
 
 .catalog-list__items li:nth-child(3) {
@@ -1111,4 +1120,275 @@ body {
 	height: 25px;
 	background: grey;
 	transform: rotate(-45deg);
+}
+
+/* MONOPODS */
+
+.user-block__exit {
+	font-family: 'Open Sans', 'Arial', serif;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+
+.user-block__exit:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.main__title {
+	font-family: 'Gilroy', 'Tahoma', serif;
+	font-size: 47px;
+}
+
+.breadcrumbs {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.breadcrumbs__item {
+	position: relative;
+	display: block;
+	padding-right: 40px;
+	font-family: 'Open Sans', 'Arial', serif;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: none;
+}
+
+.breadcrumbs__item:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs__item::after {
+	content: "\27A4";
+	position: absolute;
+	right: 15px;
+}
+
+.breadcrumbs li:last-child .breadcrumbs__item::after {
+	display: none;
+}
+
+/* SORTING AND FILTER */
+
+.wrapper {
+	display: flex;
+	margin: 40px -60px 0 -60px;
+}
+
+.filter {
+	width: 328px;
+}
+
+.filter__title {
+	padding: 24px 10px 24px 60px;
+	margin: 0;
+	font-family: 'Gilroy', 'Tahoma', serif;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	background: #dbdbdb;
+}
+
+.filter__form {
+	padding: 63px 0 0 60px;
+	background: #efefef;
+}
+
+.range {
+	position: relative;
+	height: 100px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.range__title {
+	position: relative;
+	display: block;
+	padding-top: 20px;
+	font-family: 'Gilroy', 'Tahoma', serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.range__title::before {
+	content: '';
+	position: absolute;
+	top: 8px;
+	width: 75%;
+	height: 2px;
+	background: #000000;
+}
+
+.range__scale {
+	width: 75%;
+	margin-top: 36px;
+	height: 2px;
+	background: #d7dcde;
+}
+
+.range__bar {
+	width: 60%;
+	height: 2px;
+	background: #91c92f;
+}
+
+.range__toogle {
+	position: absolute;
+	top: 73px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #000000;
+	background: #ffffff;
+	cursor: pointer;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+	        box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range .max-toogle {
+	left: 110px;
+}
+
+.price-controls input {
+	width: 70px;
+	padding: 5px 2px;
+	border: none;
+	background: transparent;
+	font-size: 14px;
+	font-family: "Gilroy", "Times", serif;
+	font-weight: 400;
+	font-style: inherit;
+	color: #283136;
+	border-radius: 5px;
+}
+
+.price-controls {
+	position: relative;
+}
+
+.price-controls label {
+	position: absolute;
+	text-transform: uppercase;
+}
+
+.min-price {
+	top: -5px;
+	left: 0;
+}
+
+.max-price {
+	top: -5px;
+	right: 100px;
+}
+
+.filter__color {
+	margin-top: 40px;
+}
+
+.filter__color .filter__title {
+	position: relative;
+	display: block;
+	padding-top: 20px;
+	padding-left: 0;
+	font-family: 'Gilroy', 'Tahoma', serif;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: none;
+	letter-spacing: 0;
+	background: transparent;
+}
+
+.filter__color .filter__title::before {
+	content: '';
+	position: absolute;
+	top: 8px;
+	width: 75%;
+	height: 2px;
+	background: #000000;
+}
+
+.filter__color label,
+.filter__bluetooth label {
+	display: block;
+	margin: 0 0 16px 2px;
+	font-family: "Gilroy", "Times", serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #000000;
+	cursor: pointer;
+}
+
+.filter__color input,
+.filter__bluetooth input {
+	display: none;
+}
+
+.filter__color input + .controls {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background: #cecece;
+}
+
+.filter__color input:checked + .controls {
+	background: #cecece url("../img/checkbox-on.svg") no-repeat 50% 50%;
+}
+
+.filter__bluetooth {
+	margin-top: 35px;
+}
+
+.bluetooth__title {
+	position: relative;
+	display: block;
+	margin-bottom: 28px;
+	padding-top: 20px;
+	padding-left: 0;
+	font-family: 'Gilroy', 'Tahoma', serif;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: none;
+	letter-spacing: 0;
+	background: transparent;
+}
+
+.bluetooth__title::before {
+	content: '';
+	position: absolute;
+	top: 8px;
+	width: 75%;
+	height: 2px;
+	background: #000000;
+}
+
+.filter__bluetooth input + .controls {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	border-radius: 50%;
+	vertical-align: middle;
+	background: url("../img/radio-off.svg") no-repeat;
+}
+
+.filter__bluetooth input:checked + .controls {
+	background: url("../img/radio-on.svg") no-repeat;
+}
+
+.filter__btn {
+	margin-top: 27px;	
+	border: none;
+	background: transparent;
+}
+
+.catalog {
+	width: 760px;
+	outline: 1px solid red;
 }
