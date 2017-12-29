@@ -16,12 +16,12 @@ function showSlides(n) {
 
 showSlides(0);
 
-// var x = 0;
+var x = 0;
 
-// setInterval(function() {
-//     showSlides(x++);
-//     x > 2 ? x = 0 : x;
-// }, 4000)
+setInterval(function() {
+    showSlides(x++);
+    x > 2 ? x = 0 : x;
+}, 4000)
 
 function showAdvantages(n) {
     var advantages = document.querySelectorAll(".advantages__info"),
